@@ -5,6 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up</title>
   <link rel="stylesheet" href="client\signup.css">
+  <style>
+  .gohome{
+
+    padding: 8px;
+    text-align: center;
+    width: 60px;
+    height: auto;
+    background-color: rgb(101, 101, 101);
+    
+    position: relative;
+    align-items: center;
+    border-radius: .4em;
+    text-decoration: none;
+    color: aliceblue;
+
+
+    
+  }
+  .gohome:active{
+    padding: 8px;
+    text-align: center;
+    width: 60px;
+    height: auto;
+    
+    
+    position: relative;
+    align-items: center;
+    border-radius: .4em;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: rgb(99, 99, 99);
+    opacity: 100;
+
+  }
+  </style>
 </head>
 <body>
   <div class="signup-container">
@@ -24,9 +59,16 @@
 
       <button type="submit"><span class="log">Sign Up</span></button>
     </form>
+    <br>
     <p>Already have an account? <a href="login.html" id="loginLink">Login here</a></p>
+    <br>
+    <div>
+      <a class="gohome" href="index.html">Go home</a>
+    </div>
   </div>
+ 
 
   <script src="client\signup.js"></script>
+  <script src="client\store.js" ></script>
 </body>
 </html>
