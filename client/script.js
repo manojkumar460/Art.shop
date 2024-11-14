@@ -4,3 +4,17 @@ document.querySelector('.logo').addEventListener('click', () => {
     searchBar.style.display = searchBar.style.display === 'block' ? 'none' : 'block';
   });
   
+  // Cart and Buy functionalities
+  const cart = [];
+  
+  function addToCart(itemName, price) {
+    cart.push({ itemName, price });
+    alert(`${itemName} added to cart!`);
+    console.log(cart);
+  }
+  
+  function buyNow(itemName, price) {
+    alert(`You have chosen to buy ${itemName} for $${price}. Proceed to payment.`);
+    // Redirect to payment process or cart page if needed
+  }
+  

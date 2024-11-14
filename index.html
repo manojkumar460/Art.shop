@@ -8,19 +8,61 @@
   <script src="Client/script.js" defer></script>
 </head>
 <body>
+  <!-- Header -->
   <header>
     <div class="logo">Artshop</div>
     <div class="search-bar" id="search-bar">
       <input type="text" placeholder="Search...">
     </div>
     <div class="login-icon" id="login-icon">
-      <a href="Client/login.html"><img src="Data/images/Lion.jpeg" alt="Login"></a>
+      <a href="Client/login.html">Login / Sign In</a>
     </div>
   </header>
 
-  <!-- Main content of your index page -->
+  <!-- Main Content - Product Grid -->
   <main>
-    <!-- Your content here -->
+    <div class="product-grid">
+      <div class="product">
+        <img src="Data/images/Lion.jpeg" alt="Lion Art">
+        <h3>Lion Art</h3>
+        <p>$20.00</p>
+        <button onclick="addToCart('Lion Art', 20)">Add to Cart</button>
+        <button onclick="buyNow('Lion Art', 20)">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="Data/images/Bird.jpeg" alt="Bird Art">
+        <h3>Bird Art</h3>
+        <p>$15.00</p>
+        <button onclick="addToCart('Bird Art', 15)">Add to Cart</button>
+        <button onclick="buyNow('Bird Art', 15)">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="Data/images/Boy.jpeg" alt="Boy Art">
+        <h3>Boy Art</h3>
+        <p>$18.00</p>
+        <button onclick="addToCart('Boy Art', 18)">Add to Cart</button>
+        <button onclick="buyNow('Boy Art', 18)">Buy Now</button>
+      </div>
+      <div class="product">
+        <img src="Data/images/Deer.jpeg" alt="Deer Art">
+        <h3>Deer Art</h3>
+        <p>$25.00</p>
+        <button onclick="addToCart('Deer Art', 25)">Add to Cart</button>
+        <button onclick="buyNow('Deer Art', 25)">Buy Now</button>
+      </div>
+    </div>
   </main>
+
+  <!-- Payment Process Section -->
+  <section class="payment-process">
+    <h2>Payment Process</h2>
+    <p>Enter your payment details and confirm your order.</p>
+    <!-- Add your payment form here -->
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Artshop. All rights reserved.</p>
+  </footer>
 </body>
 </html>
