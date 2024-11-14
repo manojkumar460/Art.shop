@@ -1,0 +1,82 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-style: italic;
+    color: #f39c12;
+  }
+  
+  .login-icon img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .search-bar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    width: 200px;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Login Page */
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container h1 {
+    color: #f39c12;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-container input {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .login-container button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .login-container button:hover {
+    background-color: #f39c12;
+  }
+  
