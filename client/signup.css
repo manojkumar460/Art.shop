@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f6f8fa;
+    color: #24292f;
+  }
+  
+  .signup-container {
+    width: 100%;
+    max-width: 360px;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .signup-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333333;
+    font-weight: bold;
+  }
+  
+  form label {
+    font-weight: 600;
+    margin: 0.5rem 0 0.2rem;
+    display: block;
+    color: #24292f;
+    text-align: left;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    font-size: 1rem;
+    color: #24292f;
+    background-color: #fafbfc;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form input[type="password"]:focus {
+    border-color: #0366d6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.2);
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #ff9502;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #e27a02;
+    transform: scale(1.05);
+  }
+  
+  .log {
+    transition: opacity 0.2s ease;
+  }
+  
+  button[type="submit"]:active .log {
+    opacity: 0.8;
+  }
+  
+  /* Password toggle button styling */
+  .password-container {
+    position: relative;
+  }
+  
+  .password-container button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  .password-container button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Sign-in link */
+  #loginLink {
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  #loginLink:hover {
+    text-decoration: underline;
+  }
+  

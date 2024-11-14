@@ -1,18 +1,40 @@
 /* General Styles */
-body, html {
+ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+      
   }
+  /* Hide the scrollbar but keep scrolling enabled */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: scroll; /* Enables scrolling */
+  }
+  
+  ::-webkit-scrollbar {
+    display: none; /* Hides scrollbar in WebKit browsers like Chrome and Safari */
+    -ms-overflow-style: none; /* Hides scrollbar in Internet Explorer and Edge */
+    scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+  
+ 
+  
   
   /* Header */
   header {
     display: flex;
     justify-content: space-between;
+    position: fixed;
     align-items: center;
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
+    height: 60px;
+    width: 100%;
+    z-index: 100;
+    box-shadow:0 4px 3px #8e8e8e;
   }
   
   .logo {
@@ -25,6 +47,16 @@ body, html {
   .login-icon a {
     color: #fff;
     text-decoration: none;
+    margin-right: 50px;
+    padding: 6px;
+    background-color: #f39c12;
+    border-radius: .4em;
+    
+  }
+  .login-icon a:hover{
+    border: 1px solid  #965d00;
+    border-radius: .4em;
+    box-shadow: 0 0 6px 3px  #f39c12;
   }
   
   .search-bar {
@@ -47,29 +79,45 @@ body, html {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
+    
   }
   
   .product {
-    border: 1px solid #ddd;
+    border: 1px solid #8e8e8e;
     padding: 15px;
     text-align: center;
     border-radius: 5px;
+    width: 65%;
+    margin-left: 15%;
   }
   
   .product img {
-    width: 100%;
-    height: auto;
+
+   
+    width: 50%; /* Ensures image takes full width of the container */
+  height: 250px; /* Set a fixed height for all images */
+  object-fit: cover;
     border-radius: 5px;
+    box-shadow: 5px 5px 3px rgb(80, 80, 80);
+  }
+  .product img:hover {
+    box-shadow: 5px 5px 3px rgb(223, 115, 0);    
+
   }
   
   .product h3 {
     font-size: 18px;
     color: #333;
+    text-align: center;
+
   }
   
   .product p {
     color: #666;
+    text-align: center;
+    padding: auto;
+
   }
   
   .product button {
@@ -80,6 +128,7 @@ body, html {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    
   }
   
   .product button:hover {
